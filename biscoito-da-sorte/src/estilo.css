@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.img{
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+}
+
+.texto-frase{
+    font-style: italic;
+    color: #dd7b22;
+    text-align: center ;
+}
+
+button {
+    outline: none;
+    border: none;
+    background-color: #dd7b22;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 10px 0;
+}
