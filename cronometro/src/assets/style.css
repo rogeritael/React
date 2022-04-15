@@ -1,0 +1,47 @@
+*{
+    text-decoration: none;
+    color: #000;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.img{
+    width: 350px;
+    width: 350px;
+    margin-top: 100px;
+    position: rela;
+}
+
+.timer{
+    font-size: 100px;
+    margin-top: -240px;
+}
+
+.areaBtn{
+    margin-top: 150px;
+    display: flex;
+}
+
+.botao{
+    width: 150px;
+    height: 40px;
+    background-color: #fff;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.botao:hover{
+    opacity: 0.9;
+    color: #000;
+    transition: all 0.60s;
+}
