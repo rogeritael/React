@@ -10,7 +10,7 @@ class TodoList extends Component{
         }
 
         this.adicionarItem = this.adicionarItem.bind(this);
-        this.delete = this.delete.bind(this);
+        // this.delete = this.delete.bind(this);
     }
 
     adicionarItem(e){
@@ -27,9 +27,10 @@ class TodoList extends Component{
         this.setState({tarefa: ''})
 
         e.preventDefault();
+        this.deleteItem = this.deleteItem.bind(this);
     }
 
-    delete(key){
+    deleteItem(key){
         let filtro = this.state.items.filter((item)=>{
             return(item.key !== key);
         })
@@ -49,7 +50,7 @@ class TodoList extends Component{
                     <button type='submit'>Adicionar</button>
                 </form>
 
-                <Lista lista={this.state.items} delete={this.delete}/>
+                <Lista lista={this.state.items} delete={this.deleteItem}/>
             </div>
         );
     }
