@@ -35,7 +35,7 @@ class Home extends Component{
                             <article key={filme.id} className="filme">
                                 <strong>{filme.nome}</strong>
                                 <img src={filme.foto} alt="capa filme"/>
-                                <Link to="/">Ver</Link>
+                                <Link to={`/filme/${filme.id}`}>Ver</Link>
                             </article>
                         );
                     })}
